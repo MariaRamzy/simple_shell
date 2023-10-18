@@ -63,4 +63,8 @@ int cd_shell(data_shell *datash);
 /* get_builtin */
 int (*get_builtin(char *cmd))(data_shell *datash);
 
+/* get_line.c */
+void bring_line(char **lineptr, size_t *n, char *buffer, size_t j);
+ssize_t get_line(char **lineptr, size_t *n, FILE *stream);
+
 #endif
